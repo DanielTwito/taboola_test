@@ -1,0 +1,99 @@
+h1 {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+}
+
+.cell-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-container {
+    margin: auto;
+    border-radius: 1rem;
+    min-width: 290px;
+    background-color: rgba(80, 80, 80, 0.2);
+    width: 60%;
+}
+
+.cell {
+    color: black;
+    font-size: 2rem;
+    text-align: right;
+    width: 30%;
+    margin: 1%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 200px;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+
+.brand {
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.4);
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+}
+
+.brand:hover {
+    text-decoration: underline;
+}
+
+.widget_title:hover {
+    text-decoration: underline;
+}
+
+.widget_title {
+    text-decoration: none;
+    color: black;
+    padding-top: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 2.1em;
+    line-height: 1em;
+}
+
+.overlay {
+    position: relative;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%; /*the same as thumbnail*/
+    opacity: 1;
+    margin: auto;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .cell {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 250px;
+    }
+}
